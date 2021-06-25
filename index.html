@@ -6,129 +6,217 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="style.css">
 <body>
-
+<style>
+.centered {
+  position: relative;
+  top: 50%;
+  left: 75%;
+  transform: translate(-75%, -50%);
+  font-size: large;
+  text-align: justify;
+  word-spacing: 2px
+}</style>
 <!-- Navbar (sit on top) -->
-<div class="top">
-  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
-    <a href="#home" class="w3-bar-item w3-button">Shanthi Sai Portfolio</a>
-    <!-- Right-sided navbar links. Hide them on small screens -->
+<div class="top" >
+  <div class="w3-bar w3-padding w3-card" style="letter-spacing:4px; background-color: rgb(117, 181, 253); color: darkblue; font-family: 'Source Sans Pro', sans-serif">
+    <a href="#Overview" class="w3-bar-item w3-button"><strong>Shanthi Sai Portfolio</strong></a>
+    <!-- Right-sided navbar links. Hide them on small screens --> 
     <div class="w3-right w3-hide-small">
-      <a href="#about" class="w3-bar-item w3-button">About</a>
-      <a href="#sprint1" class="w3-bar-item w3-button">Sprint 1</a>
-      <a href="#sprint2" class="w3-bar-item w3-button">Sprint 2</a>
-      <a href="#sprint3" class="w3-bar-item w3-button">Sprint 3</a>
-      <a href="#sprint4" class="w3-bar-item w3-button">Sprint 4</a>
-      <a href="#sprint5" class="w3-bar-item w3-button">Sprint 5</a>
+
+      <a href="https://www.multiverz.com/" class="w3-bar-item w3-button"><strong>Multiverz Company Profile</strong></a>
+      <a href="#Overview" class="w3-bar-item w3-button"><strong>Overview</strong></a>
+      <a href="#about" class="w3-bar-item w3-button"><strong>About</strong></a>
+      
+      <div class="w3-dropdown-hover">
+        <button class="w3-bar-item w3-button" style="letter-spacing:4px;"><strong>Sprints</strong></button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4" style="background-color: rgb(117, 181, 253); color:darkblue;">
+          <a href="#sprint1" class="w3-bar-item w3-button"><strong>Sprint 1</strong></a>
+          <a href="#sprint2" class="w3-bar-item w3-button"><strong>Sprint 2</strong></a>
+          <a href="#sprint3" class="w3-bar-item w3-button"><strong>Sprint 3</strong></a>
+          <a href="#sprint4" class="w3-bar-item w3-button"><strong>Sprint 4</strong></a>
+          <a href="#sprint5" class="w3-bar-item w3-button"><strong>Sprint 5</strong></a>
+          <a href="#sprint6" class="w3-bar-item w3-button"><strong>Sprint 6</strong></a>
+          <a href="#sprint7" class="w3-bar-item w3-button"><strong>Sprint 7</strong></a>
+          <a href="#sprint8" class="w3-bar-item w3-button"><strong>Sprint 8</strong></a>
+        </div>
+      </div>
     </div>
   </div>
 </div>
 
 <!-- Header -->
-<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px;margin-top: 50px;" id="home">
-  <img class="w3-image" src="images1/Web_scraping.jpeg" alt="Hamburger Catering" width="1600" height="800">
-  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
-    <h1 class="w3-xxlarge">Jobverz</h1>
+<div class="container" id = "Overview">
+  <img src="images1/Multiverz-removebg.png" width="100%" height="100%" style="opacity: 90%;">
+  <h1 class="w3-xxlarge w3-text-black w3-center" style="top:15%; position: absolute;margin-left: 45%;"><b>Overview</b></h1>
+  <h1 class="w3-xxlarge w3-text-black " style="bottom:25%; position: absolute;margin-left: 14%;" ><b>Multiverz</b></h1>
+  <div class="text1">
+    <!-- <img class="w3-image" src="images1/Multiverz-removebg.png" alt="Web Scraping" width="1600" height="800"> -->
+    
+    <div class="w3-text-black w3-xlarge">The overview of this Multiverz project is to generate a product that can act as a guide to a job seeker on a particluar selected domain by providing available job oppurtunities depending on their current skills set. Additionally, it provides valuable information about the skills sets and the courses available to acquire them for any chosen domain by the job seeker. <br>
+      <br> As a part of Job Aggregators team, we were assigned to scrape 1 million unique job postings and structure them as per defined unified schema in the span of 8 sprints.
+      </div>
   </div>
-</header>
+</div>
 
 
-
+<hr>
 <!-- Page content -->
 <!-- <div class="w3-content"> -->
-    <div id="about">
-<div style="margin-left: 15%;margin-right: 15%;margin-top: 30px;">
-    <br>
-    <br>
-    <h1 class="w3-center">About Web scraping</h1><br>
-    <p class="w3-large">Initial thoughts on web scraping as a work would be trivial, easy, and unimportant. However, I have realised through the 4 weeks of internship at Multiverse that it is one of the most important steps in the Data science pipeline which most of us turn a blind eye to. </p>
-    <p class="w3-large">Structured data is of paramount importance when it comes to data analytics but more than 70% of  data present online is unstructured and hence is of little use. However, Web scraping allows us to “legally” collect information from thousands of websites and structure the data into desirable format which eases further steps of the Data science pipeline.</p>
-    <img src="images1/pipeline.png" class="w3-round w3-image " alt="Table Setting">
-</div>
-</div>
-<br>
-<div class="w3-light-grey">
+    <div style = "background-color: navy;" id="about">
+    <div style="margin-left: 15%;margin-right: 15%;margin-top: 30px; color: white;">
+        <br>
+        <br>
+        <h1 class="w3-center"><strong>About Web scraping</strong></h1><br>
+        <p class="w3-large">Initial thoughts on web scraping as a work would be trivial, easy, and unimportant. However, I have realised through the 4 weeks of internship at Multiverse that it is one of the most important steps in the Data science pipeline which most of us turn a blind eye to. </p>
+        <p class="w3-large">Structured data is of paramount importance when it comes to data analytics but more than <strong>70%</strong> of  data present online is unstructured and hence is of little use. However, Web scraping allows us to “legally” collect information from thousands of websites and structure the data into desirable format which eases further steps of the Data science pipeline.</p>
+        <img src="images1/pipeline.png" class="w3-round w3-image " alt="About Web scraping">
+    </div>
+    </div>
+  
+<hr>
+<div class="w3-white">
 <div style="margin-left: 15%;margin-right: 15%;margin-top: 30px; " id="about">
     <br>
     <br>
-    <h1 class="w3-center">About Scrapy tool</h1><br>
+    <h1 class="w3-center"><strong>About Scrapy tool</strong></h1><br>
     <p class="w3-large">There exists a number of ways and libraries to perform the task of web scraping. I have chosen the scrapy tool to do so as it is very fast and supports scalability on an enterprise level. Working of the scrapy tool can be summarized as follows.</p>
-    <img src="images1/scrapy_architecture.png" class="w3-round w3-image " alt="Table Setting">
+    <img src="images1/scrapy_architecture.png" class="w3-round w3-image " alt="About Scrapy tool">
 </div>
 <br>
 </div>
 
+
+<hr>
   <!-- About Section -->
-  
-    <div class="w3-row w3-padding-64" id="sprint1">
+<br>  
+    <div class="w3-row w3-padding-64" style = "color: rgb(250, 181, 7);background-image: url('https://c4.wallpaperflare.com/wallpaper/22/240/855/texture-gradient-simple-background-blue-wallpaper-preview.jpg');"id="sprint1" >
         <h1 class="w3-center">Sprint 1</h1><br>
         <div class="w3-col m6 w3-padding-large w3-hide-small">
-        <img src="images1/Indeed_India.PNG" class="w3-round w3-image image_left" alt="Table Setting">
+        <img src="images1/Indeed_India.PNG" class="w3-round w3-image image_left" alt="Sprint 1">
         </div>
 
         <div class="w3-col m6 w3-padding-large">
-        <p class="w3-large" style="padding-top:10%">As a part of sprint 1, I started researching how to use a scrapy tool and scraped all the available Data Scientist job postings from Indeed India website. Structured the obtained data into the required pre-defined schema as a JSON format. Converted it into a CSV file.</p>
+        <p class="w3-xlarge" style="padding-top:10%">As a part of sprint 1, I started researching how to use a scrapy tool and scraped all the available Data Scientist job postings from Indeed India website. Structured the obtained data into the required pre-defined schema as a JSON format. Converted it into a CSV file.</p>
         </div>
     </div>
   
-  <hr>
+<hr>
   
   <!-- Menu Section -->
-  <div class="w3-light-grey">
-    <div class="w3-row w3-padding-64" id="sprint2">
+  <div  style = "background-color:gray;">
+    <div class="w3-row w3-padding-64" id="sprint2" style="color: white;">
       <h1 class="w3-center">Sprint 2</h1><br>
       <div class="w3-col l6 w3-padding-large">
-          <p class="w3-large" style="padding-top:10%">For the sprint 2, researched on SkillsFuture Singapore website and fetched the data. Figured out the architecture of SkillsFuture website where competency levels for both the technical and generic skills for each job role is given. Obtained the required skills competency levels data for each job role under different sectors and structured it into CSV file.</p>
+          <p class="w3-xlarge" style="padding-top:10%; ">For the sprint 2, researched on SkillsFuture Singapore website and fetched the data. Figured out the architecture of SkillsFuture website where competency levels for both the technical and generic skills for each job role is given. Obtained the required skills competency levels data for each job role under different sectors and structured it into CSV file.</p>
       </div>
       
       <div class="w3-col l6 w3-padding-large">
-        <img src="images1/Skills Future.png" class="w3-round w3-image image_right" alt="Menu">
+        <img src="images1/Skills Future.png" class="w3-round w3-image image_right" alt="Sprint 2">
       </div>
     </div>
   </div>
-  <hr>
+
+
+<hr>
 
   <!-- About Section -->
   
-    <div class="w3-row w3-padding-64" id="sprint3"">
-        <h1 class="w3-center">Sprint 3</h1><br>
+    <div class="w3-row w3-padding-64" id="sprint3" style="background-color: rgb(171, 129, 67);">
+        <h1 class="w3-center" style="color:white;">Sprint 3</h1><br>
         <div class="w3-col m6 w3-padding-large w3-hide-small">
-        <img src="images1/Exxon.PNG" class="w3-round w3-image image_left" alt="Table Setting">
+        <img src="images1/Exxon.PNG" class="w3-round w3-image image_left" alt="Sprint 3">
         </div>
 
-        <div class="w3-col m6 w3-padding-large">
-        <p class="w3-large" style="padding-top:10%">As a part of sprint 3, Scraped all the available job postings from the Exxon Mobile which stands 3rd in Fortune 500 (2020) companies. Additionally fetched data for all the job postings using Scrapy tool from Indeed USA website. As the data is in structured format, scraping these job aggregator websites are much easier than company websites. On a whole scraped 2K job postings and processed the obtained data into predefined schema and structured it into a CSV file.</p>
+        <div class="w3-col m6 w3-padding-large" style="color:white;">
+        <p class="w3-xlarge" style="padding-top:0%">As a part of sprint 3, Scraped all the available job postings from the Exxon Mobile which stands 3rd in Fortune 500 (2020) companies. Additionally fetched data for all the job postings using Scrapy tool from Indeed USA website. As the data is in structured format, scraping these job aggregator websites are much easier than company websites. On a whole scraped <strong style="color:crimson;">2K</strong> unique job postings and processed the obtained data into predefined schema and structured it into a CSV file.</p>
         </div>
     </div>
 
-  <hr>
+
+<hr>
 
   <!-- Menu Section -->
-  <div class="w3-light-grey">
+  <div style="background-color: rgb(42, 218, 245);">
   <div class="w3-row w3-padding-64" id="sprint4">
     <h1 class="w3-center">Sprint 4</h1><br>
     <div class="w3-col l6 w3-padding-large">
-        <p class="w3-large" style="padding-top:10%">For the sprint 4, Scraped all the available job postings from two of the top 20 Fortune 500 companies (2020) which are  AT&T and Walgreens websites using Scrapy tool. On a whole scraped 13K job postings and processed the obtained data into predefined schema and structured it into a CSV file.</p>
+        <p class="w3-xlarge" style="padding-top:5%">For the sprint 4, Scraped all the available job postings from two of the top 20 Fortune 500 companies (2020) which are  AT&T and Walgreens websites using Scrapy tool. On a whole scraped <strong>13K</strong> unique job postings and processed the obtained data into predefined schema and structured it into a CSV file.</p>
     </div>
     
     <div class="w3-col l6 w3-padding-large">
-      <img src="images1/AT&T.PNG" class="w3-round w3-image image_right" alt="Menu">
+      <img src="images1/AT&T.PNG" class="w3-round w3-image image_right" alt="Sprint 4">
     </div>
   </div>
 </div>
-  <hr>
+
+<hr>
 
   <!-- About Section -->
   
-    <div class="w3-row w3-padding-64" id="sprint5" >
-        <h1 class="w3-center">Sprint 5</h1><br>
-        <div class="w3-col m6 w3-padding-large w3-hide-small">
-        <img src="images1/Fortune.PNG" class="w3-round w3-image image_left">
+    <div class="w3-row w3-padding-64" id="sprint5" style="background-color:white;" >
+        <h1 class="w3-center" style="color: orangered;">Sprint 5</h1><br>
+        <div class="w3-col m6 w3-padding-large w3-hide-small" style="width: 50%; height:10%;">
+          <div class="row">
+            <div class="column w3-round w3-image image_left">
+              <img src="images1/kroger.png">
+              <img src="images1/Hca.png" style="padding:2%;">
+              <img src="images1/intel-logo-generic-678_678x452.png">
+              <img src="images1/_albertsons-companies-.png">
+            </div>
         </div>
-
+      </div>
         <div class="w3-col m6 w3-padding-large">
-        <p class="w3-large" style="padding-top:10%">As a part of sprint 5, Scraped all the available job postings from four of the top 100 Fortune 500 companies (2020) which are Kregor, HCA Healthcare, Intel and AlbertSons websites using Scrapy as well as JSON and Selenium tools. On a whole scraped 16K job postings and processed the obtained data into predefined schema and structured it into a CSV file.</p>
+        <p class="w3-xlarge" style="padding-top:10%; color:rgb(30, 30, 107);">As a part of sprint 5, Scraped all the available job postings from four of the top 100 Fortune 500 companies (2020) which are Kroger, HCA Healthcare, Intel and AlbertSons websites using Scrapy as well as JSON and Selenium tools. On a whole scraped <strong>16K</strong> unique job postings and processed the obtained data into predefined schema and structured it into a CSV file.</p>
         </div>
     </div>
+
+
+<hr>
+
+  <!-- Menu Section -->
+  <div style="background-color: rgb(230, 227, 227);">
+  <div class="w3-row w3-padding-64" id="sprint6" style="color: rgb(12, 12, 167);">
+    <h1 class="w3-center">Sprint 6</h1><br>
+    <div class="w3-col l6 w3-padding-large">
+        <p class="w3-xlarge" style="padding-top:5%">For the sprint 6, Scraped all the available job postings from four of the Fortune 500 companies (2020) which are  Cognizant, DaVita, Jabil and ADP websites using Scrapy and Selenium tools. On a whole scraped <strong>24K</strong> unique job postings and processed the obtained data into predefined schema and structured it into a CSV file.</p>
+    </div>
+    <div class="w3-col l6 w3-padding-large">
+      <img src="images1/Cognizant.PNG" class="w3-round w3-image image_right" alt="Sprint 6">
+    </div>
+  </div>
+  </div>
+
+
+<hr>
+  <!-- About Section -->
+  
+  <div class="w3-row w3-padding-64" id="sprint7" style="background-color:whitesmoke;">
+    <h1 class="w3-center" style="color:rgb(66, 66, 66);">Sprint 7</h1><br>
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+    <img src="images1/Whatjobs.PNG" class="w3-round w3-image image_left">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+    <p class="w3-xlarge" style="padding-top:8% ;color:crimson;">As a part of sprint 7, Scraped all the available job postings from Whatjobs aggregator website using Scrapy tool. On a whole scraped <strong>91K</strong> unique job postings and processed the obtained data into predefined schema and structured it into a CSV file.</p>
+    </div>
+  </div>
+
+
+<hr>
+
+  <!-- Menu Section -->
+  <div class="w3-light-grey">
+  <div class="w3-row w3-padding-64" id="sprint8">
+    <h1 class="w3-center"style="color:rgb(237, 124, 19);">Sprint 8</h1><br>
+    <div class="w3-col l6 w3-padding-large">
+        <p class="w3-xlarge" style="padding-top:8%; color:rgb(37, 102, 201) ;">For the sprint 8 to achieve scraping of 1 million unique job postings, scraped available job postings from Mashable and Jobisjob aggregator websites using Scrapy tool. On a whole scraped <strong>250K</strong> unique job postings and processed the obtained data into predefined schema and structured it into a CSV file.</p>
+    </div>
+    
+    <div class="w3-col l6 w3-padding-large">
+      <img src="images1/Jobisjob.PNG" class="w3-round w3-image image_right" alt="Sprint 8">
+    </div>
+  </div>
+  </div>      
   
 <!-- End page content -->
 <!-- </div> -->
